@@ -14,7 +14,7 @@ export const TelegramMessage = ({ text, isMe, time, isRead }: TelegramMessagePro
         <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: false, margin: "-100px" }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.4, ease: "easeOut" }}
             className={cn("flex w-full mb-2", isMe ? "justify-end" : "justify-start")}
         >
@@ -23,7 +23,7 @@ export const TelegramMessage = ({ text, isMe, time, isRead }: TelegramMessagePro
                 isMe && "bg-(--accent-deep)  rounded-tr-md",
                 !isMe && "bg-(--surface-tonal)  rounded-tl-md"
             )}>
-                <p className="text-lg  leading-relaxed pr-12 whitespace-pre-wrap">{text}</p>
+                <p className="text-lg  text-(--primary-foreground) leading-relaxed pr-12 whitespace-pre-wrap">{text}</p>
                 <div className="absolute bottom-1.5 right-3 flex items-center gap-1 select-none">
                     <span className={cn(
                         "text-sm leading-none",

@@ -101,7 +101,7 @@ export function FirstAcquaintance() {
                         <Chip
                             variant="flat"
                             size="sm"
-                            className="bg-(--primary)/60 border-none shadow-sm"
+                            className="bg-(--primary)/60 border-none shadow-sm text-(--primary-foreground)"
                         >
                             30 Августа 2024
                         </Chip>

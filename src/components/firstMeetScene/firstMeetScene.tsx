@@ -8,7 +8,7 @@ export const FirstMeetScene = () => {
     return (
         <section className="min-h-screen py-20 flex flex-col gap-20 relative overflow-hidden">
 
-            <div className="absolute inset-0 bg-linear-to-b from-(--primary)/5transparent to-(--primary)/5ter-events-none" />
+            <div className="absolute inset-0 bg-linear-to-b from-(--primary)/5 transparent to-(--primary)/5ter-events-none" />
             <MessageCard
                 author="Pudge"
                 message="Блин, я сегодня приехал в парк, жаль что тебя так и нешёл..."
@@ -27,19 +27,13 @@ export const FirstMeetScene = () => {
                 isReverse={true}
                 delay={0.2}
             />
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: false }}
-                transition={{ duration: 0.6 }}
-                className="relative py-16 flex justify-center items-center"
-            >
-                <div className="absolute w-80 h-80 bg-(--primary)/10 blur-[100px] rounded-full" />
-                <h2 className="text-7xl md:text-8xl font-black tracking-tighter bg-clip-text text-transparent bg-linear-to-r from-(--primary) to-(--primary)/40 uppercase">
-                    А нет))
-                </h2>
-            </motion.div>
 
+            <div className="relative py-16 flex justify-center items-center" >
+                <h2 className="text-7xl md:text-8xl font-black tracking-tighter bg-clip-text text-transparent bg-linear-to-r from-(--primary) to-(--primary)/40 uppercase">
+                    А нет ))
+                </h2>
+
+            </div>
             <FirstMeetScenePhoto />
             <MessageCard
                 author="Alexa"
@@ -121,14 +115,8 @@ function FirstMeetScenePhoto() {
 
 function TextReview() {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.5 }}
-            className="px-6 mt-10 max-w-2xl mx-auto w-full"
-        >
-            <Card className="border border-(--border) bg-linear-to-br from-(--primary)/10 via-(--surface-tonal)/50 to-transparent backdrop-blur-md shadow-xl">
+        <div className="px-6 mt-10 max-w-2xl mx-auto w-full">
+            <Card className="border border-(--border) bg-(--surface-tonal)/80 backdrop-blur-md shadow-xl">
                 <CardHeader className="flex gap-3 pb-0">
                     <Sparkles className="text-(--primary)" size={22} />
                     <div className="flex flex-col">
@@ -139,7 +127,7 @@ function TextReview() {
                 </CardHeader>
                 <Divider className="my-4 bg-(--border)" />
                 <CardBody className="pt-0">
-                    <p className="text-lg leading-relaxed text-(--secondary-hover)/70">
+                    <p className="text-lg leading-relaxed text-(--primary)/50">
                         Я помню этот вечер, как мы гугяли часов 6,
                         хоть я в основном молчал и слушал про твои фильмы),
                         но мы были интересно друг другу и
@@ -148,6 +136,6 @@ function TextReview() {
                     </p>
                 </CardBody>
             </Card>
-        </motion.div>
+        </div>
     );
 }

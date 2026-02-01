@@ -31,13 +31,16 @@ export const MessageCard = ({
             )} />
 
             <motion.div
-                initial={{ opacity: 0, x: isReverse ? 50 : -50 }}
+                initial={{ opacity: 0, x: isReverse ? 20 : -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.3 }}
+
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{
                     delay,
-                    duration: 0.6,
-                    ease: [0.16, 1, 0.3, 1]
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                    mass: 0.1,
                 }}
                 className={cn(
                     "relative flex z-10",
@@ -59,7 +62,7 @@ export const MessageCard = ({
                             'flex flex-col gap-2 items-center shrink-0',
                             isReverse ? 'items-end' : 'items-start'
                         )}>
-                            <span className="text-xs uppercase tracking-[0.2em] text-(--muted-foreground) font-black">
+                            <span className="text-xs uppercase tracking-[0.2em] text-[var(--muted-foreground)] font-black">
                                 {author}
                             </span>
                             <Avatar
@@ -67,10 +70,13 @@ export const MessageCard = ({
                                 size="md"
                                 isBordered
                                 radius="full"
-                                className={cn("shadow-lg",
-                                    bgColor === "black" && "ring-orange-200/80",
-                                    bgColor === "violet" && " ring-(--primary)/60"
-                                )}
+                                classNames={{
+                                    base: cn(
+                                        "shadow-lg ring-offset-(--background)",
+                                        bgColor === "black" && "ring-orange-200/80",
+                                        bgColor === "violet" && " ring-(--primary)/60"
+                                    )
+                                }}
                             />
                         </div>
 

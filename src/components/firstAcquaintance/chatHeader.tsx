@@ -11,12 +11,12 @@ export function ChatHeader() {
                 </Button >
                 <div className="flex items-center gap-3 flex-1">
                     <Avatar
-                        src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                        src="herAvatar.jpg"
                         size="md"
 
                     />
                     <div className="flex flex-col">
-                        <span className="text-xg font-bold">Alexa</span>
+                        <span className="text-xg font-bold text-(--foreground)">Alexa</span>
                         <span className="text- text-(--muted-foreground)">online</span>
                     </div>
                 </div>

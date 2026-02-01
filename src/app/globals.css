@@ -3,57 +3,32 @@
 @source '../../node_modules/@heroui/theme/dist';
 
 :root {
-  --background: #ffffff;
-  --foreground: #09090b;
+  --background: #030303;
+  --foreground: #fafafa;
 
   --primary: #7c3aed;
   --primary-foreground: #ffffff;
 
   --accent-deep: #8774e1;
-  --surface-tonal: #212121;
+  --surface-tonal: #1a1a1a;
 
-  --secondary: #f4f4f5;
+  --secondary: #18181b;
   --secondary-foreground: #1d1d22;
-  --secondary-hover: #e4e4e7;
+  --secondary-hover: #27272a;
 
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
 
-  --muted: #f4f4f5;
-  --muted-foreground: #7b7b85;
+  --muted: #111113;
+  --muted-foreground: #71717a;
   --border: #e4e4e7;
-  --input: #e4e4e7;
+  --input: #27272a;
   --ring: #7c3aed;
 
   --radius: 0.75rem;
 
   --shadow-primary-md: 0 10px 30px -10px rgba(124, 58, 237, 0.3);
   --shadow-messenger-sm: 0 4px 12px rgba(43, 82, 120, 0.2);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #030303;
-    --foreground: #fafafa;
-
-    --primary: #8b5cf6;
-    --primary-foreground: #ffffff;
-
-    --messenger-blue: #2b5278;
-    --messenger-blue-text: #ffffff;
-    --messenger-her-bubble: #1c1c1e;
-
-    --secondary: #18181b;
-    --secondary-foreground: #fafafa;
-    --secondary-hover: #27272a;
-
-    --border: #27272a;
-    --input: #27272a;
-    --ring: #8b5cf6;
-
-    --shadow-primary-md: 0 0 25px rgba(139, 92, 246, 0.15);
-    --shadow-messenger-sm: 0 4px 12px rgba(43, 82, 120, 0.15);
-  }
 }
 
 body {
@@ -81,13 +56,6 @@ body {
   background: var(--muted-foreground);
 }
 
-.bg-messenger {
-  background-color: var(--messenger-blue);
-}
-
-.bg-her-bubble {
-  background-color: var(--messenger-her-bubble);
-}
 
 * {
   transition-property: background-color, border-color, color, fill, stroke;

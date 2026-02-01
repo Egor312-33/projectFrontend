@@ -15,10 +15,9 @@ interface TelegramMediaprops {
 export const TelegramMedia = ({ src, isMe, time, isRead, caption }: TelegramMediaprops) => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 15, scale: 0.98 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.2 } }}
-            viewport={{ once: false, amount: 0.2, margin: "-20px 0px -20px 0px" }}
+            viewport={{ once: true, amount: 0.1, margin: "-10% 0px" }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className={cn("flex w-full mb-2 outline-none", isMe ? "justify-end" : "justify-start")}
         >
