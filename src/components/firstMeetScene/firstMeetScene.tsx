@@ -9,7 +9,7 @@ export const FirstMeetScene = () => {
             <div className="absolute inset-0  from-(--primary)/5 transparent to-(--primary)/5ter-events-none" />
             <MessageCard
                 author="Pudge"
-                message="Блин, я сегодня приехал в парк, жаль что тебя так и нешёл..."
+                message="Блин, я сегодня приехал в парк, жаль что тебя так и не нашёл..."
                 avatarSrc="/myAvatar.jpg"
                 bgColor="violet"
                 isReverse={false}
