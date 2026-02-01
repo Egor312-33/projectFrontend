@@ -54,7 +54,7 @@ export const FirstMeetScene = () => {
             <TextReview title="PUDGE"
                 description="Я помню этот вечер, как мы гугяли часов 6,
                     хоть я в основном молчал и слушал про твои фильмы),
-                    но мы были интересно друг другу и
+                    но мы были интересны друг другу и
                     именно тогда я и влюбился в тебя" />
 
             <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-(--primary)/30 to-transparent" />

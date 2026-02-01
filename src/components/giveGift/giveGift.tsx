@@ -15,7 +15,7 @@ export const GiveGift = () => {
             <TextReview
                 title="PUDGE"
                 description="Помню тот момент, когда ты шла и читала письмо и мимо прохящая девушка заулыбалась,
-                а потом поняли, что на другой стороне письма был нарисован котик)" />
+                а потом мы поняли, что на другой стороне письма был нарисован котик)" />
             <ScenePhoto
                 caption="Это ты"
                 imageSrc="/giveGift/giveGift.jpg"
@@ -24,7 +24,7 @@ export const GiveGift = () => {
             <div className="flex flex-col items-center justify-center mt-10 mb-20">
                 <div className="h-10 w-px bg-linear-to-brfrom-(--primary)/30o-transparent mb-4" />
                 <p className="text-(--muted-foreground) text-sm tracking-[0.2em] uppercase font-light">
-                    28 Сентября
+                    28 Сентября 2024
                 </p>
             </div>
             <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-rrom-transparent via-(--primary)/30 to-transparent" />
