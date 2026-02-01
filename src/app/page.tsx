@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="max-w-5xl mx-auto bg-(--secondary-foreground)/90 text-(--background) rounded-2xl rounded-bl-none">
       <Wallpaper
-        title="Первое Знакомство"
+        title="Наше Знакомство"
         subtitle="Всё началось с этого диалога. 
         Тогда я еще не знал, что застряну в нем на полтора года." />
 
