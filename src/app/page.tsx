@@ -1,6 +1,7 @@
 
 import { FirstAcquaintance } from "@/components/firstAcquaintance/firstAcquaintance";
 import { FirstMeetScene } from "@/components/firstMeetScene/firstMeetScene";
+import { GiveGift } from "@/components/giveGift/giveGift";
 import { PhotoMemory } from "@/components/photoMemory/photoMemory";
 import { Wallpaper } from "@/components/wallpaper/wallpaper";
 
@@ -18,6 +19,10 @@ export default function Home() {
         subtitle="Недели две мы только договоривались погулять, уже я даже надежду потерять успел, ахах" />
       <FirstMeetScene />
       <PhotoMemory />
+      <Wallpaper
+        title="Последняя встреча"
+        subtitle="Всё было хорошо, но всё равно эта встречала стала последней" />
+      <GiveGift />
     </main>
   );
 }
