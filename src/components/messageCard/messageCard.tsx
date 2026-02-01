@@ -31,16 +31,13 @@ export const MessageCard = ({
             )} />
 
             <motion.div
-                initial={{ opacity: 0, x: isReverse ? 20 : -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-
-                viewport={{ once: false, amount: 0.2 }}
+                initial={{ opacity: 0, scale: 0.98 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
                 transition={{
                     delay,
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 20,
-                    mass: 0.1,
+                    duration: 0.8,
+                    ease: "easeOut"
                 }}
                 className={cn(
                     "relative flex z-10",
