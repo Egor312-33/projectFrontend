@@ -1,8 +1,8 @@
 
 import { FirstAcquaintance } from "@/components/firstAcquaintance/firstAcquaintance";
 import { FirstMeetScene } from "@/components/firstMeetScene/firstMeetScene";
+import { PhotoMemory } from "@/components/photoMemory/photoMemory";
 import { Wallpaper } from "@/components/wallpaper/wallpaper";
-
 
 export default function Home() {
   return (
@@ -15,8 +15,9 @@ export default function Home() {
       <FirstAcquaintance />
       <Wallpaper
         title="Первая встреча"
-        subtitle="Недели две мы только договоривались погулять, уже даже надежду потерять успел,ахах" />
+        subtitle="Недели две мы только договоривались погулять, уже я даже надежду потерять успел, ахах" />
       <FirstMeetScene />
+      <PhotoMemory />
     </main>
   );
 }

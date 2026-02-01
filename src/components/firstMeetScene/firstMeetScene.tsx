@@ -8,7 +8,7 @@ export const FirstMeetScene = () => {
     return (
         <section className="min-h-screen py-20 flex flex-col gap-20 relative overflow-hidden">
 
-            <div className="absolute inset-0 bg-linear-to-b from-(--primary)/5 transparent to-(--primary)/5ter-events-none" />
+            <div className="absolute inset-0  from-(--primary)/5 transparent to-(--primary)/5ter-events-none" />
             <MessageCard
                 author="Pudge"
                 message="Блин, я сегодня приехал в парк, жаль что тебя так и нешёл..."

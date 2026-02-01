@@ -59,7 +59,7 @@ export const MessageCard = ({
                             'flex flex-col gap-2 items-center shrink-0',
                             isReverse ? 'items-end' : 'items-start'
                         )}>
-                            <span className="text-xs uppercase tracking-[0.2em] text-[var(--muted-foreground)] font-black">
+                            <span className="text-xs uppercase tracking-[0.2em] text-(--muted-foreground)-black">
                                 {author}
                             </span>
                             <Avatar
